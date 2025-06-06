@@ -3,7 +3,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
 from database import init_db, close_db
-from routes import movie_router, movies
+from routes import movie_router
 
 
 @asynccontextmanager
