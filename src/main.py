@@ -20,7 +20,4 @@ app = FastAPI(
 )
 
 api_version_prefix = "/api/v1"
-app.include_router(movies.router, prefix=api_version_prefix, tags=["movies"])
-
-
 app.include_router(movie_router, prefix=f"{api_version_prefix}/theater", tags=["theater"])
